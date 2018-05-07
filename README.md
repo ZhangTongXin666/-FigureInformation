@@ -15,9 +15,9 @@
 <img src = "https://wx3.sinaimg.cn/mw690/006ejHeKly1fr2jvlpeguj309l0h2n0h.jpg" width=100 heigth=100>
 <img src = "https://wx4.sinaimg.cn/mw690/006ejHeKly1fr2jvlp2xcj309o0h7goq.jpg" width=100 heigth=100>
 <img src = "https://wx4.sinaimg.cn/mw690/006ejHeKly1fr2l4gnqecj309y0hon23.jpg" width=100 heigth=100>
+<img src="https://wx4.sinaimg.cn/mw690/006ejHeKly1fr2jvljcpaj30ew07xaau.jpg" width=100 heigth=60>
 <img src = "https://wx3.sinaimg.cn/mw690/006ejHeKly1fr2jvlpeguj309l0h2n0h.jpg" width=100 heigth=100><br>
 首页分为轮播图，热门专题，信息类别选择三大块。当有新的资讯进行发表时会提醒用户有信息已经发表，用户可以选择查看或者不查看。当用户下滑查看信息时，搜索栏会展开显示，信息类别切换按钮也会靠上停靠，便于用户随时搜索，切换类别和刷新信息；同时下方的切换拦也会隐藏，向用户展示更多的内容，如果用户想回到顶部可以点击右方出现的蓝色箭头回到顶部，免去用户一下一下滑上去。我们的软件还加入了护眼提醒，当用户长时间盯着屏幕时将会提醒用户保护眼睛。<br>
-<img src="https://wx4.sinaimg.cn/mw690/006ejHeKly1fr2jvljcpaj30ew07xaau.jpg" width=100 heigth=60><br>
 <h3>3、搜素</h3>
 <img src="https://wx1.sinaimg.cn/mw690/006ejHeKly1fr2l58orr8j309y0hojv3.jpg" width=100 heigth=60>
 <img src="https://wx3.sinaimg.cn/mw690/006ejHeKly1fr2l58ominj309x0hn41x.jpg" width=100 heigth=60>
