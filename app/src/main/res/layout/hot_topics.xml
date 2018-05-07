@@ -1,0 +1,2126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <view.MyScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sv_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ProgressBar
+                    style="@style/progressbar_style"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:indeterminateOnly="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正在刷新。。。"
+                    android:textColor="#515151" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/information_background"
+                    android:elevation="7dp"
+                    android:id="@+id/rl_information1">
+
+                    <TextView
+                        android:id="@+id/tv_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="开启讲习班"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/si_special1"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title1"
+                        android:layout_marginLeft="13dp"
+                        android:text="热点专题:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tv_special1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title1"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_special1"
+                        android:text="专业学术会议与学术活动"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_person1"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special1"
+                        android:layout_marginLeft="13dp"
+                        android:text="推荐人："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_person1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special1"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_person1"
+                        android:text="xuxue (2017-9-14) "
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_from1"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person1"
+                        android:layout_marginLeft="13dp"
+                        android:text="来源："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_from1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person1"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_from1"
+                        android:text="大英图书馆"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_abstract1"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from1"
+                        android:layout_marginLeft="13dp"
+                        android:text="摘要："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_abstract1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from1"
+                        android:layout_marginLeft="13dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="           Get the knowledge and information you need to successfully launch a business In this full day workshop we will cover the essentials of what you need to do to set up and launch a business. It will cover: A self-assessment of whether you are ready to launch a business or not Finding the facts - answering some of the typical questions that arise when starting in business Must-know marketing – find out how marketing to the right customers and in the right marketplace can ensure you... "
+                        android:textColor="@color/textColor" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/information_background"
+                    android:elevation="7dp"
+                    android:id="@+id/rl_information2">
+
+                    <TextView
+                        android:id="@+id/tv_title2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="网络编目和元数据:在用户所在之处找到他们: ALCTS预备会议，2017年会"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_special2"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title2"
+                        android:layout_marginLeft="13dp"
+                        android:text="热点专题:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_special2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title2"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_special2"
+                        android:text="专业学术会议与学术活动"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_person2"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special2"
+                        android:layout_marginLeft="13dp"
+                        android:text="推荐人："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_person2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special2"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_person2"
+                        android:text="xuxue (2017-9-14) "
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_from2"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person2"
+                        android:layout_marginLeft="13dp"
+                        android:text="来源："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_from2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person2"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_from2"
+                        android:text="美国图书馆协会图书馆藏书和技术服务协会"
+                        android:textColor="@color/textColor"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_abstract2"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from2"
+                        android:layout_marginLeft="13dp"
+                        android:text="摘要："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_abstract2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from2"
+                        android:layout_marginLeft="13dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="           Cataloging and Metadata for the Web: Meeting the User Where They Are: ALCTS Preconference, 2017 Annual Conference. The ALCTS Preconference “Cataloging and Metadata for the Web: Meeting the User Where They Are” was held on Friday, June 23, 2017. There were 63 attendees, approximately half were from academic libraries, while the rest were from public libraries, special libraries, and a few other types of organizations. The preconference included seven speakers with questions and ans... "
+                        android:textColor="@color/textColor" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/information_background"
+                    android:elevation="7dp"
+                    android:id="@+id/rl_information3">
+
+                    <TextView
+                        android:id="@+id/tv_title3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="2017数字出版与数字图书馆融合发展国际研讨会在并召开"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_special3"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title3"
+                        android:layout_marginLeft="13dp"
+                        android:text="热点专题:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_special3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title3"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_special3"
+                        android:text="专业学术会议与学术活动"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_person3"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special3"
+                        android:layout_marginLeft="13dp"
+                        android:text="推荐人："
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tv_person3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special3"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_person3"
+                        android:text="mawutong (2017-8-22)"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_from3"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person3"
+                        android:layout_marginLeft="13dp"
+                        android:text="来源："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_from3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person3"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_from3"
+                        android:text="e线图情"
+                        android:textColor="@color/textColor"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_abstract3"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from3"
+                        android:layout_marginLeft="13dp"
+                        android:text="摘要："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_abstract3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from3"
+                        android:layout_marginLeft="13dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="           [作者] 李晓芳 [摘要] 8月17日上午，以“转型升级、跨界融合、创新发展”为主题的2017年数字出版与数字图书馆融合发展国际研讨会在太原召开，省委常委、宣传部长王清宪出席会议并致辞。 [关键词] 数字出版 数字图书馆 融合发展. "
+                        android:textColor="@color/textColor" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/information_background"
+                    android:elevation="7dp"
+                    android:id="@+id/rl_information4"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_title4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="澳大利亚图书馆与信息协会将于2018年7月召开可持续发展目标峰会"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_special4"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title4"
+                        android:layout_marginLeft="13dp"
+                        android:text="热点专题:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_special4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title4"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_special4"
+                        android:text="专业学术会议与学术活动"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_person4"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special4"
+                        android:layout_marginLeft="13dp"
+                        android:text="推荐人："
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tv_person4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special4"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_person4"
+                        android:text="孟连生 (2017-8-22) "
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_from4"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person4"
+                        android:layout_marginLeft="13dp"
+                        android:text="来源："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_from4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person4"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_from4"
+                        android:text="e线图情"
+                        android:textColor="@color/textColor"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_abstract4"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from4"
+                        android:layout_marginLeft="13dp"
+                        android:text="摘要："
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tv_abstract4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from4"
+                        android:layout_marginLeft="13dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="           [作者] 赵启玥 编译 [单位] 北京雷速科技有限公司 [摘要] 图书馆与信息专业人员的可持续发展目标峰会将于2018年7月29日在澳大利亚昆士兰州黄金海岸会议中心召开。 [关键词] 澳大利亚图书馆与信息协会 可持续发展目标峰会 澳大利亚 昆士兰州. "
+                        android:textColor="@color/textColor" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/information_background"
+                    android:elevation="7dp"
+                    android:id="@+id/rl_information5">
+
+                    <TextView
+                        android:id="@+id/tv_title5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="图书馆受邀参加社交媒体 ”禁书周”活动"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_special5"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title5"
+                        android:layout_marginLeft="13dp"
+                        android:text="热点专题:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_special5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title5"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_special5"
+                        android:text="专业学术会议与学术活动"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_person5"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special5"
+                        android:layout_marginLeft="13dp"
+                        android:text="推荐人："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_person5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special5"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_person5"
+                        android:text="mawutong (2017-8-22)"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_from5"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person5"
+                        android:layout_marginLeft="13dp"
+                        android:text="来源："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_from5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person5"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_from5"
+                        android:text="美国图书馆协会"
+                        android:textColor="@color/textColor"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_abstract5"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from5"
+                        android:layout_marginLeft="13dp"
+                        android:text="摘要："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_abstract5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from5"
+                        android:layout_marginLeft="13dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="           Libraries invited to join social media activity this Banned Books Week. Subscribe Download Images. (Click for full-size) Related. www.ala.org/advocacy/bbooks/bannedbooksweek/rebelreaderatyourlibrary www.ala.org/advocacy/bbooks/bannedbooksweek/rebelreader www.ala.org/oif www.alastore.ala.org/bbw www.ala.org/bbooks Thu, 08/17/2017Contact:. Ellie Diaz Program Officer Office for Intellectual Freedom American Library Association 312-280-4225 ediaz@ala.... "
+                        android:textColor="@color/textColor" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/information_background"
+                    android:elevation="7dp"
+                    android:id="@+id/rl_information6">
+
+                    <TextView
+                        android:id="@+id/tv_title6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="ARL / SAA马赛克计划研究人员参加领导论坛"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_special6"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title6"
+                        android:layout_marginLeft="13dp"
+                        android:text="热点专题:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_special6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title6"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_special6"
+                        android:text="专业学术会议与学术活动"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_person6"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special6"
+                        android:layout_marginLeft="13dp"
+                        android:text="推荐人："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_person6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special6"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_person6"
+                        android:text="mawutong (2017-8-22)"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_from6"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person6"
+                        android:layout_marginLeft="13dp"
+                        android:text="来源："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_from6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person6"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_from6"
+                        android:text="研究图书馆协会"
+                        android:textColor="@color/textColor"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_abstract6"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from6"
+                        android:layout_marginLeft="13dp"
+                        android:text="摘要："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_abstract6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from6"
+                        android:layout_marginLeft="13dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="           Home ›News ›ARL News ›ARL/SAA Mosaic Program Fellows Attend Leadership Forum ARL/SAA Mosaic Program Fellows Attend Leadership Forum . by  Mark A. Puente 202-296-2296 mpuente@arl.orgon  August 04, 2017 ARL/SAA Mosaic Program Fellows at SAA Annual Meeting, July 2017 (click to enlarge) The Association of Research Libraries (ARL) and Society of American Archivists (SAA) hosted  the fourth ARL/SAA Mosaic Program Leadership Forum on July 25, 2017, in c... "
+                        android:textColor="@color/textColor" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/information_background"
+                    android:elevation="7dp"
+                    android:id="@+id/rl_information7">
+
+                    <TextView
+                        android:id="@+id/tv_title7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="LibQUAL + 2018注册现在开放：加入全球评估社区"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_special7"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title7"
+                        android:layout_marginLeft="13dp"
+                        android:text="热点专题:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_special7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title7"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_special7"
+                        android:text="专业学术会议与学术活动"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_person7"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special7"
+                        android:layout_marginLeft="13dp"
+                        android:text="推荐人："
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tv_person7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special7"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_person7"
+                        android:text="mawutong (2017-8-22)"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_from7"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person7"
+                        android:layout_marginLeft="13dp"
+                        android:text="来源："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_from7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person7"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_from7"
+                        android:text="研究图书馆协会"
+                        android:textColor="@color/textColor"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_abstract7"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from7"
+                        android:layout_marginLeft="13dp"
+                        android:text="摘要："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_abstract7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from7"
+                        android:layout_marginLeft="13dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="           Home ›News ›ARL News ›LibQUAL+ 2018 Registration Now Open: Join the Global Assessment Community LibQUAL+ 2018 Registration Now Open: Join the Global Assessment Community . by  Angela Pappalardo 202-296-2296 libqual@arl.orgon  August 15, 2017 Countries of LibQUAL+ The Association of Research Libraries invites libraries to join the global assessment community of LibQUAL+® by registering for the 2018 LibQUAL+ survey. LibQUAL+ is a tool that librar... "
+                        android:textColor="@color/textColor" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/information_background"
+                    android:elevation="7dp"
+                    android:id="@+id/rl_information8">
+
+                    <TextView
+                        android:id="@+id/tv_title8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Giao Luong Baker获得2017年Julia C. Blixrud奖学金"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_special8"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title8"
+                        android:layout_marginLeft="13dp"
+                        android:text="热点专题:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_special8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title8"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_special8"
+                        android:text="专业学术会议与学术活动"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_person8"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special8"
+                        android:layout_marginLeft="13dp"
+                        android:text="推荐人："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_person8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special8"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_person8"
+                        android:text="mawutong (2017-8-22)"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_from8"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person8"
+                        android:layout_marginLeft="13dp"
+                        android:text="来源："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_from8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person8"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_from8"
+                        android:text="研究图书馆协会"
+                        android:textColor="@color/textColor"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_abstract8"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from8"
+                        android:layout_marginLeft="13dp"
+                        android:text="摘要："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_abstract8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from8"
+                        android:layout_marginLeft="13dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="           Home ›News ›ARL News ›Giao Luong Baker Awarded Julia C. Blixrud Scholarship for 2017 Giao Luong Baker Awarded Julia C. Blixrud Scholarship for 2017 . by  Julia C. Blixrud Scholarship Committee 202-296-2296 JCBfund@arl.orgon  August 14, 2017 Giao Luong Baker To honor the memory and extend the legacy of longtime staff member Julia Blixrud, the Association of Research Libraries (ARL) established in 2015 the Julia C. Blixrud Scholarship, which suppor... "
+                        android:textColor="@color/textColor" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/information_background"
+                    android:elevation="7dp"
+                    android:id="@+id/rl_information9">
+
+                    <TextView
+                        android:id="@+id/tv_title9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="澳大利亚图书馆设计奖暨2017年会议"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_special9"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title9"
+                        android:layout_marginLeft="13dp"
+                        android:text="热点专题:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_special9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title9"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_special9"
+                        android:text="专业学术会议与学术活动"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_person9"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special9"
+                        android:layout_marginLeft="13dp"
+                        android:text="推荐人："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_person9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special9"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_person9"
+                        android:text="xuxue (2017-8-14)"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_from9"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person9"
+                        android:layout_marginLeft="13dp"
+                        android:text="来源："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_from9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person9"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_from9"
+                        android:text="澳大利亚图书馆与信息协会"
+                        android:textColor="@color/textColor"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_abstract9"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from9"
+                        android:layout_marginLeft="13dp"
+                        android:text="摘要："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_abstract9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from9"
+                        android:layout_marginLeft="13dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="           You are here Awards. Australian Library Design Awards and Conference 2017. The winners of the inaugural ALIA Australian Library Design Awards were announced on 19 June 2017, at Library at the Dock, Melbourne. They were: St Joseph’s Nudgee College, Hanly Learning Centre, Queensland (school). City of Perth Library (public). John Philips Library, Western Sydney University (academic). Arup, Sydney (special). Geelong Library and Heritage Centre, Victoria (ALIA Members' Choic... "
+                        android:textColor="@color/textColor" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/information_background"
+                    android:elevation="7dp"
+                    android:id="@+id/rl_information10">
+
+                    <TextView
+                        android:id="@+id/tv_title10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="第一阶段完成！国际图联的全球愿景讨论遍及全球六个地区的140国家"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_special10"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title10"
+                        android:layout_marginLeft="13dp"
+                        android:text="热点专题:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_special10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title10"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_special10"
+                        android:text="专业学术会议与学术活动"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_person10"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special10"
+                        android:layout_marginLeft="13dp"
+                        android:text="推荐人："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_person10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special10"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_person10"
+                        android:text="xuxue (2017-8-14)"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_from10"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person10"
+                        android:layout_marginLeft="13dp"
+                        android:text="来源："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_from10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person10"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_from10"
+                        android:text="国际图联"
+                        android:textColor="@color/textColor"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_abstract10"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from10"
+                        android:layout_marginLeft="13dp"
+                        android:text="摘要："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_abstract10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from10"
+                        android:layout_marginLeft="13dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="           20 July 2017 Press Release Stage 1 complete! IFLA’s Global Vision Discussion reaches 140 countries across six regions. Now it’s your turn!. The Hague, 20 July 2017— The worldwide response to International Federation of Library Associations and Institutions (IFLA)‘s Global Vision Discussion, a venture which will generate a united library field roadmap for the future, has been nothing short of remarkable.  After the Global Vision launch in Athens, regional workshops kicked off ...  "
+                        android:textColor="@color/textColor" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/information_background"
+                    android:elevation="7dp"
+                    android:id="@+id/rl_information11"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_title11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginRight="11dp"
+                        android:text="ISWC2017——第十六届国际语义网会议"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_special11"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title11"
+                        android:layout_marginLeft="13dp"
+                        android:text="热点专题:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_special11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title11"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_special11"
+                        android:text="专业学术会议与学术活动"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_person11"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special11"
+                        android:layout_marginLeft="13dp"
+                        android:text="推荐人："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_person11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special11"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_person11"
+                        android:text="xuxue (2017-8-14)"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_from11"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person11"
+                        android:layout_marginLeft="13dp"
+                        android:text="来源："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_from11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person11"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_from11"
+                        android:text="W3C 理事会"
+                        android:textColor="@color/textColor"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_abstract11"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from11"
+                        android:layout_marginLeft="13dp"
+                        android:text="摘要："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_abstract11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from11"
+                        android:layout_marginLeft="13dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="           Home. Vienna One of the most liveable cities in the world Conference venue - MESSE Wien Located right next to the Prater, the most famous public park in Vienna Workshop venue - WU University The brand-new WU campus hosts building blocks designed by different well-known architects Welcome reception The City of Vienna will offer a Mayor’s Reception at the great Vienna City Hall. ISWC 2017 is the premier international forum, for the Semantic Web / Linked Data Comm... "
+                        android:textColor="@color/textColor" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/information_background"
+                    android:elevation="7dp"
+                    android:id="@+id/rl_information12">
+
+                    <TextView
+                        android:id="@+id/tv_title12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:text="中国图书馆学会关于表彰2017年“同筑中国梦 共度书香年”活动组织单位的决定"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_special12"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title12"
+                        android:layout_marginLeft="13dp"
+                        android:text="热点专题:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_special12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title12"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_special12"
+                        android:text="专业学术会议与学术活动"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_person12"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special12"
+                        android:layout_marginLeft="13dp"
+                        android:text="推荐人："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_person12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special12"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_person12"
+                        android:text="xuxue (2017-8-14)"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_from12"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person12"
+                        android:layout_marginLeft="13dp"
+                        android:text="来源："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_from12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person12"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_from12"
+                        android:text="e线图情"
+                        android:textColor="@color/textColor"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_abstract12"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from12"
+                        android:layout_marginLeft="13dp"
+                        android:text="摘要："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_abstract12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from12"
+                        android:layout_marginLeft="13dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="           [作者] 湖南省图书馆学会 [单位] 湖南省图书馆学会 [摘要] 为加强文化传承和社会服务，将国家图书馆优质资源惠及全国图书馆和读者，使图书馆春节主题活动在全国范围内形成联动，突出我国图书馆对于文化惠民的重要意义，中国图书馆学… [关键词] 中国图书馆学会 同筑中国梦 共度书香年 组织单位. "
+                        android:textColor="@color/textColor" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/information_background"
+                    android:elevation="7dp"
+                    android:id="@+id/rl_information13"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_title13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="13dp"
+                        android:text="全国数字化管理员实习计划寻求2018年-2019年合作机构"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_special13"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title13"
+                        android:layout_marginLeft="13dp"
+                        android:text="热点专题:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_special13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title13"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_special13"
+                        android:text="专业学术会议与学术活动"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_person13"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special13"
+                        android:layout_marginLeft="13dp"
+                        android:text="推荐人："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_person13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special13"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_person13"
+                        android:text="xuxue (2017-8-14)"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_from13"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person13"
+                        android:layout_marginLeft="13dp"
+                        android:text="来源："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_from13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person13"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_from13"
+                        android:text="北美艺术图书馆协会"
+                        android:textColor="@color/textColor"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_abstract13"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from13"
+                        android:layout_marginLeft="13dp"
+                        android:text="摘要："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_abstract13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from13"
+                        android:layout_marginLeft="13dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="           National Digital Stewardship Residency Program Seeks 2018-19 Partner Institutions . Published 08/08/17 The National Digital Stewardship Residency program for art information (NDSR Art) seeks partner institutions across the U.S. for its 2018-19 cohort. Thanks to generous support from the Institute of Museum and Library Services (IMLS), NDSR Art is able to offer a one year salary and professional development stipend for a full-time digital stewardship resident to be embedded at four inst... "
+                        android:textColor="@color/textColor" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/information_background"
+                    android:elevation="7dp"
+                    android:id="@+id/rl_information14"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_title14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginRight="14dp"
+                        android:text="中国图书馆学会学术研究委员会召开第三次主任委员工作会议"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_special14"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title14"
+                        android:layout_marginLeft="13dp"
+                        android:text="热点专题:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_special14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title14"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_special14"
+                        android:text="专业学术会议与学术活动"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_person14"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special14"
+                        android:layout_marginLeft="13dp"
+                        android:text="推荐人："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_person14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special14"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_person14"
+                        android:text="xuxue (2017-8-14)"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_from14"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person14"
+                        android:layout_marginLeft="13dp"
+                        android:text="来源："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_from14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person14"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_from14"
+                        android:text="e线图情"
+                        android:textColor="@color/textColor"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_abstract14"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from14"
+                        android:layout_marginLeft="13dp"
+                        android:text="摘要："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_abstract14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from14"
+                        android:layout_marginLeft="13dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="           [作者] 中国图书馆学会 [单位] 中国图书馆学会 [摘要] 2017年7月9日上午，中国图书馆学会第九届理事会学术研究委员会在广州中山大学召开第三次主任委员工作会议，主任委员吴建中，副主任委员汪东波、柯平、孙建军、黄如花… [关键词] 中国图书馆学会 学术研究委员会 主任委员."
+                        android:textColor="@color/textColor" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/information_background"
+                    android:elevation="7dp"
+                    android:id="@+id/rl_information15"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_title15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:text=" 2017中国图书馆学会年会征文终评会顺利召开"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_special15"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title15"
+                        android:layout_marginLeft="13dp"
+                        android:text="热点专题:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_special15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title15"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_special15"
+                        android:text="专业学术会议与学术活动"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_person15"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special15"
+                        android:layout_marginLeft="13dp"
+                        android:text="推荐人："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_person15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special15"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_person15"
+                        android:text="xuxue (2017-8-14)"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_from15"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person15"
+                        android:layout_marginLeft="13dp"
+                        android:text="来源："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_from15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person15"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_from15"
+                        android:text="e线图情"
+                        android:textColor="@color/textColor"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_abstract15"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from15"
+                        android:layout_marginLeft="13dp"
+                        android:text="摘要："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_abstract15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from15"
+                        android:layout_marginLeft="13dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="           [作者] 中国图书馆学会 [单位] 中国图书馆学会 [摘要] 2017年7月25日，2017中国图书馆学会年会征文终评会在国家图书馆顺利召开。至此，在业界众多专家学者的大力支持、中国图书馆学会各分支机构和秘书处的积极工作以… [关键词] 中国图书馆学会 年会征文. "
+                        android:textColor="@color/textColor" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/information_background"
+                    android:elevation="7dp"
+                    android:id="@+id/rl_information16"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_title16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text="吉林省第六次全国县级以上公共图书馆评估工作暨专家培训会议"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_special16"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title16"
+                        android:layout_marginLeft="13dp"
+                        android:text="热点专题:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_special16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title16"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_special16"
+                        android:text="专业学术会议与学术活动"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_person16"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special16"
+                        android:layout_marginLeft="13dp"
+                        android:text="推荐人："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_person16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special16"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_person16"
+                        android:text="xuxue (2017-8-14)"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_from16"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person16"
+                        android:layout_marginLeft="13dp"
+                        android:text="来源："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_from16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person16"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_from16"
+                        android:text="e线图情"
+                        android:textColor="@color/textColor"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_abstract16"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from16"
+                        android:layout_marginLeft="13dp"
+                        android:text="摘要："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_abstract16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from16"
+                        android:layout_marginLeft="13dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="           [作者] 吉林省图书馆 [单位] 吉林省图书馆 [摘要] 按照评估进度安排，2017年7月18日，由吉林省文化厅主办，吉林省图书馆学会、吉林省图书馆承办的吉林省第六次全国县级以上公共图书馆评估工作暨专家培训会议在省图书… [关键词] 吉林省 公共图书馆 评估工作 长春. "
+                        android:textColor="@color/textColor" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/information_background"
+                    android:elevation="7dp"
+                    android:id="@+id/rl_information17"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_title17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="17dp"
+                        android:text="数字图书馆联合会议"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_special17"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title17"
+                        android:layout_marginLeft="13dp"
+                        android:text="热点专题:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_special17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title17"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_special17"
+                        android:text="专业学术会议与学术活动"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_person17"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special17"
+                        android:layout_marginLeft="13dp"
+                        android:text="推荐人："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_person17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special17"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_person17"
+                        android:text="xuxue (2017-8-14)"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_from17"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person17"
+                        android:layout_marginLeft="13dp"
+                        android:text="来源："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_from17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person17"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_from17"
+                        android:text="数字图书馆联合会议"
+                        android:textColor="@color/textColor"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_abstract17"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from17"
+                        android:layout_marginLeft="13dp"
+                        android:text="摘要："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_abstract17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from17"
+                        android:layout_marginLeft="13dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="           JCDL steering Committee . The objective of the ACM/IEEE JCDL is to promote research and development in the area of Digital Libraries. The conference goal is to meet the needs of a large and diverse constituency, which includes practitioners, researchers, educators, and policy makers. The focus of the conference is to provide a forum where various aspects of digital libraries are addressed, different communities are represented, and to offer the opportunity for all to learn from one another a... "
+                        android:textColor="@color/textColor" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/information_background"
+                    android:elevation="7dp"
+                    android:id="@+id/rl_information18"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_title18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:text="美国图书馆协会开启图书馆就绪编程项目的授予请求阶段"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_special18"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title18"
+                        android:layout_marginLeft="13dp"
+                        android:text="热点专题:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_special18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title18"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_special18"
+                        android:text="专业学术会议与学术活动"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_person18"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special18"
+                        android:layout_marginLeft="13dp"
+                        android:text="推荐人："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_person18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special18"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_person18"
+                        android:text="xuxue (2017-8-14)"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_from18"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person18"
+                        android:layout_marginLeft="13dp"
+                        android:text="来源："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_from18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person18"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_from18"
+                        android:text="美国图书馆协会"
+                        android:textColor="@color/textColor"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_abstract18"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from18"
+                        android:layout_marginLeft="13dp"
+                        android:text="摘要："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_abstract18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from18"
+                        android:layout_marginLeft="13dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="           ALA opens application period for Libraries Ready to Code grants . Subscribe For Immediate Release Mon, 07/24/2017 Contact:. Shawnda Hines Press Officer ALA Washington Office ALA Washington Office (202) 628-8410 shines@alawash.org WASHINGTON, DC — The American Library Association (ALA) has opened the application period for grants to develop public and school library programming that promotes computer science (CS) and computational thinking (CT) among yo... "
+                        android:textColor="@color/textColor" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/information_background"
+                    android:elevation="7dp"
+                    android:id="@+id/rl_information19"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_title19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginRight="19dp"
+                        android:text="密歇根州立大学主办ARL多样性学者现场分析 "
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_special19"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title19"
+                        android:layout_marginLeft="13dp"
+                        android:text="热点专题:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_special19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title19"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_special19"
+                        android:text="专业学术会议与学术活动"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_person19"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special19"
+                        android:layout_marginLeft="13dp"
+                        android:text="推荐人："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_person19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_special19"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_person19"
+                        android:text="mawutong (2017-7-19)"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/si_from19"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person19"
+                        android:layout_marginLeft="13dp"
+                        android:text="来源："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_from19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_person19"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/si_from19"
+                        android:text="研究图书馆协会"
+                        android:textColor="@color/textColor"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/si_abstract19"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from19"
+                        android:layout_marginLeft="13dp"
+                        android:text="摘要："
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_abstract19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/si_from19"
+                        android:layout_marginLeft="13dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="           Home ›News ›ARL News ›Michigan State University Hosts ARL Diversity Scholars for Site Visit Michigan State University Hosts ARL Diversity Scholars for Site Visit . by  Mark A. Puente 202-296-2296 mpuente@arl.orgon  June 08, 2017 ARL Diversity Scholars at Michigan State University, May 2017 (click to enlarge) The Michigan State University (MSU) Libraries and their director, Cliff Haka, hosted the 2016–2018 class of Association of Research Librarie... "
+                        android:textColor="@color/textColor" />
+
+                </RelativeLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_load"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ProgressBar
+                    style="@style/progressbar_style"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:indeterminateOnly="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正在奋力加载。。。"
+                    android:textColor="#515151" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </view.MyScrollView>
+
+</LinearLayout>

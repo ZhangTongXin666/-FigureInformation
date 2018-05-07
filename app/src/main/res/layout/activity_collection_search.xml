@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/file_list_bg">
+
+    <LinearLayout
+        android:elevation="5dp"
+        android:background="@drawable/persioncenter_linearlayout_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/title_view"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo_search"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/shape_bg"
+        android:elevation="15dp">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:hint="请输入要搜索的内容"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:background="@null"
+            android:id="@+id/et_search"/>
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|end"
+            android:drawableLeft="@mipmap/search"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:text="搜索"
+            android:textColor="#8A8A8A"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shelves_editbook"
+            android:text="文献检索"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/bt_Document"
+            android:elevation="15dp"/>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shelves_editbook"
+            android:text="期刊"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/bt_JournalPaper"
+            android:elevation="15dp"/>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shelves_editbook"
+            android:text="会议"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:id="@+id/bt_ProceedingsSet"
+            android:elevation="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shelves_editbook"
+            android:text="学位论文"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/bt_DegreePaper"
+            android:elevation="15dp"/>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shelves_editbook"
+            android:text="专利"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/bt_Patent"
+            android:elevation="15dp"/>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shelves_editbook"
+            android:text="报告"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:id="@+id/bt_ReportMatrix"
+            android:elevation="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shelves_editbook"
+            android:text="文集汇编"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/bt_CorpusCompileMatrix"
+            android:elevation="15dp"/>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shelves_editbook"
+            android:text="丛书"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/bt_BookMatrix"
+            android:elevation="15dp"/>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shelves_editbook"
+            android:text="标准文献"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:id="@+id/bt_StandardLiterature"
+            android:elevation="15dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

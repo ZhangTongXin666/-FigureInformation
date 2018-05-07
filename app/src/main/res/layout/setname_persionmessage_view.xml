@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/setname_persionmessage_tv"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/setname_edittext_bg"
+        android:gravity="center"
+        android:hint="姓名?"
+        android:padding="5dp"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/sureName_persionMessage_bt"
+        android:layout_marginTop="10dp"
+        android:text="确定"
+        android:background="@drawable/permissionmessage_dialog_bt_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+
+</LinearLayout>

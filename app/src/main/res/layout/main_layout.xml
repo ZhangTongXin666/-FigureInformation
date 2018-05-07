@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:background="@drawable/collectionbg"
+        android:id="@+id/iv_collectionTop"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:background="@drawable/collectionbg"
+        android:id="@+id/iv_collectionBottom"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/titleBack_persionMessage_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/back" />
+            <TextView
+                android:layout_marginLeft="60dp"
+                android:id="@+id/tv_warn"
+                android:layout_marginRight="10dp"
+                android:gravity="end"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="提示：长按取消收藏"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <view.IOSMessageListView
+            android:layout_marginTop="10dp"
+            android:id="@+id/showCollection_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </view.IOSMessageListView>
+    </LinearLayout>
+
+</RelativeLayout>

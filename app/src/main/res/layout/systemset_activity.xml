@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/file_list_bg">
+
+    <LinearLayout
+        android:elevation="5dp"
+        android:background="@drawable/persioncenter_linearlayout_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/title_view"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:elevation="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="@dimen/systemSetMarginRight"
+        android:layout_marginLeft="@dimen/systemSetMarginLeft"
+        android:background="@drawable/persioncenter_linearlayout_bg"
+        android:padding="@dimen/systemSetPadding"
+        android:id="@+id/handMoveMentClear_systemSet_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:text="手动清理缓存"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+        <TextView
+            android:text="已缓存数据："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/dataSize_systemSet_tv"
+            android:layout_marginRight="10dp"
+            android:gravity="end"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:elevation="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="@dimen/systemSetMarginRight"
+        android:layout_marginLeft="@dimen/systemSetMarginLeft"
+        android:background="@drawable/persioncenter_linearlayout_bg"
+        android:padding="@dimen/systemSetPadding"
+        android:id="@+id/nightModel_systemSet_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:text="夜间模式"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+        <TextView
+            android:text="关"
+            android:layout_marginRight="10dp"
+            android:id="@+id/nightModel_systemSet_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+        <Switch
+            android:id="@+id/nightModel_systemSet_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:elevation="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="@dimen/systemSetMarginRight"
+        android:layout_marginLeft="@dimen/systemSetMarginLeft"
+        android:background="@drawable/persioncenter_linearlayout_bg"
+        android:padding="@dimen/systemSetPadding"
+        android:id="@+id/checkUpdata_systemSet_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:text="检查更新"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/version_systemSet_tv"
+            android:layout_marginRight="10dp"
+            android:text="V 1.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:elevation="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="@dimen/systemSetMarginRight"
+        android:layout_marginLeft="@dimen/systemSetMarginLeft"
+        android:background="@drawable/persioncenter_linearlayout_bg"
+        android:padding="@dimen/systemSetPadding"
+        android:id="@+id/DoGrade_systemSet_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="为APP打分"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_marginRight="10dp"
+            android:text="您的评价是我们进步的动力"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:elevation="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="@dimen/systemSetMarginRight"
+        android:layout_marginLeft="@dimen/systemSetMarginLeft"
+        android:background="@drawable/persioncenter_linearlayout_bg"
+        android:padding="@dimen/systemSetPadding"
+        android:id="@+id/about_systemSet_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:text="关于"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_marginRight="10dp"
+            android:text="图情资讯软件是一款......"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:background="@drawable/back_left"
+            android:id="@+id/replaceLogin_systemSet_bt"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:text="更   换   帐   号"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+        <Button
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/back_left"
+            android:id="@+id/exitLogin_systemSet_bt"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:text="退   出   登   录"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/downRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.jude.rollviewpager.RollPagerView
+                    android:id="@+id/roll_view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_replaceHotTheme"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="30dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_weight="6"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:src="@drawable/vertical_icon"
+                            android:layout_width="20dp"
+                            android:layout_height="30dp" />
+                        <TextView
+                            android:textColor="@color/gray"
+                            android:text="热门专题"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:id="@+id/ll_replaceTheme"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/iv_replaceTheme"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/refresh_icon"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="换一批"
+                            android:textColor="@color/gray" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_hotTheme"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:id="@+id/tv_oneTheme"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:background="@drawable/firstpage_textview_bg"
+                        android:textColor="@color/tomato"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:id="@+id/tv_twoTheme"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:layout_marginLeft="6dp"
+                        android:background="@drawable/firstpage_textview_bg"
+                        android:textColor="@color/tomato"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:id="@+id/tv_threeTheme"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:background="@drawable/firstpage_textview_bg"
+                        android:textColor="@color/tomato"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:id="@+id/tv_fourTheme"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:layout_marginLeft="6dp"
+                        android:background="@drawable/firstpage_textview_bg"
+                        android:textColor="@color/tomato"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/four"
+                        android:textColor="@color/white"
+                        android:background="@drawable/allmessage_icon"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"/>
+
+                    <Button
+                        android:id="@+id/one"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/one"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/three"
+                        android:textColor="@color/white"
+                        android:background="@drawable/two"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp" />
+                    <Button
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:id="@+id/bt_two"
+                        android:textColor="@color/white"
+                        android:background="@drawable/important_report"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingLeft="20dp"
+                    android:paddingRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_weight="6"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:src="@drawable/vertical_icon"
+                            android:layout_width="20dp"
+                            android:layout_height="30dp" />
+                        <TextView
+                            android:textColor="@color/gray"
+                            android:text="文章目录"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:id="@+id/ll_replaceEssay"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/iv_replaceEssay"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/refresh_icon"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="换一批"
+                            android:textColor="@color/gray" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ListView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/lv_hotEssay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@android:color/white">
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll_search"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shape_bg"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/tv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/search_icon"
+                    android:gravity="center_vertical"
+                    android:text="搜索"
+                    android:textColor="#8A8A8A" />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginTop="60dp"
+        android:id="@+id/ll_copy"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/fourCopy"
+                android:textColor="@color/white"
+                android:background="@drawable/allmessage_icon"
+                android:layout_width="100dp"
+                android:layout_height="40dp"/>
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/oneCopy"
+                android:textColor="@color/white"
+                android:background="@drawable/one"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/threeCopy"
+                android:textColor="@color/white"
+                android:background="@drawable/two"
+                android:layout_width="100dp"
+                android:layout_height="40dp" />
+            <Button
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:id="@+id/bt_twoCopy"
+                android:textColor="@color/white"
+                android:background="@drawable/important_report"
+                android:layout_width="100dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="30dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="6"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/vertical_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:textColor="@color/gray"
+                    android:text="文章目录"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/ll_replaceEssayCopy"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/iv_replaceEssayCopy"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/refresh_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="换一批"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_upTop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="420dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/up_icon" />
+</RelativeLayout>

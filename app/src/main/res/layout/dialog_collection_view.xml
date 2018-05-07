@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textColor="@color/red"
+        android:text="确认删除操作？"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:background="@drawable/interestselect_bt_bg"
+        android:id="@+id/bt_cancleCollection"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="确定" />
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:background="@drawable/interestselect_bt_bg"
+        android:id="@+id/bt_noCancle"
+        android:text="点错了"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.kys_31.figureinformation.MainActivity">
+
+    <!--FrameLayout内容区-->
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+    <!--底部区-->
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <view.MetaballMenu
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/metaball_menu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@color/木色"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            app:metaballColor="@android:color/white">
+
+            <view.MetaballMenuImageView
+                android:id="@+id/menuitem1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                app:defaultImage="@drawable/home_white"
+                app:selectedImage="@drawable/home_red"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+            <view.MetaballMenuImageView
+                android:id="@+id/menuitem2"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                app:defaultImage="@drawable/recommend_white"
+                app:selectedImage="@drawable/recommend_red"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+            <view.MetaballMenuImageView
+                android:id="@+id/menuitem3"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                app:defaultImage="@drawable/personal_white"
+                app:selectedImage="@drawable/personal_red"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+        </view.MetaballMenu>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android1:shape="rectangle">
+<solid android1:color="@android:color/white"/>
+    <stroke android1:width="1dp"
+        android1:color="@android:color/darker_gray"/>
+</shape>

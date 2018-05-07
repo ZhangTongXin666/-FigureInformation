@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/file_list_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingRight="10dp"
+            android:id="@+id/ll_top"
+            android:elevation="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/titlebar_big"
+            android:gravity="bottom">
+            <TextView
+                android:textColor="@color/white"
+                android:enabled="false"
+                android:id="@+id/tv_allMessage"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="重要报告"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/decor_icon"/>
+            <TextView
+                android:enabled="false"
+                android:id="@+id/tv_one"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:text="情报资源"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/decor_icon"/>
+            <TextView
+                android:enabled="false"
+                android:id="@+id/tv_two"
+                android:padding="10dp"
+                android:text="编译报道"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/decor_icon"/>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/lv_interest"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </LinearLayout>
+
+
+</RelativeLayout>

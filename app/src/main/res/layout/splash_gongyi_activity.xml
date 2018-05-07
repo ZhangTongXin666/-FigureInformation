@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_gongyi">
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="亲近家庭"-->
+        <!--android:textSize="25dp"-->
+        <!--android:textColor="@color/orangered"-->
+        <!--android:id="@+id/text"-->
+        <!--android:layout_marginTop="70dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="70dp"/>-->
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="远离手机"-->
+        <!--android:textSize="25dp"-->
+        <!--android:textColor="@color/orangered"-->
+        <!--android:id="@+id/text1"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginTop="110dp"-->
+        <!--android:layout_marginRight="30dp"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="公益广告"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="13dp"
+        android:padding="5dp"
+        android:background="@drawable/bg_frame_gray"/>
+
+    <view.CircleProgressBar
+    android:layout_margin="20dp"
+    android:layout_alignParentRight="true"
+    android:id="@+id/bar1"
+    app:cpbStrokeWidth="5"
+    app:cpbBackgroundColor="#9000"
+    app:cpbProgressTextColor="@color/orangered"
+    android:layout_height="36dp"
+    android:layout_width="36dp" />
+
+</RelativeLayout>

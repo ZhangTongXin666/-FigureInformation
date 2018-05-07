@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:imagecontrol="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base_background">
+
+    <LinearLayout
+        android:elevation="5dp"
+        android:background="@drawable/persioncenter_linearlayout_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/title_view"/>
+    </LinearLayout>
+
+    <TextView
+        android:textSize="12sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:text="基本信息"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:elevation="5dp"
+        android:id="@+id/email_persionMessage_ll"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="@dimen/persionMessagePaddingBottom"
+        android:paddingTop="@dimen/persionMessagePaddingTop"
+        android:background="@drawable/persioncenter_linearlayout_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="邮箱"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/email_persionMessage_tv"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorAccent"
+            android:text="qwertyuiopasdfghjopasdfghjklklopasdfghjklzxcvbnm.........."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:elevation="5dp"
+        android:id="@+id/head_persionMessage_ll"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="@dimen/persionMessagePaddingBottom"
+        android:paddingTop="@dimen/persionMessagePaddingTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="头像"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+        <view.RoundImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            imagecontrol:border_inside_color="#bc0978"
+            imagecontrol:border_outside_color="#ba3456"
+            imagecontrol:border_thickness="1dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/head_persionMessage_riv" />
+
+        <ImageView
+            android:id="@+id/demo"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/access"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:elevation="5dp"
+        android:id="@+id/name_persionMessage_ll"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="@dimen/persionMessagePaddingBottom"
+        android:paddingTop="@dimen/persionMessagePaddingTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="昵称"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:gravity="end"
+            android:id="@+id/name_persionMessage_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:hint="图情资讯用户"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:src="@drawable/access"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:elevation="5dp"
+        android:id="@+id/sex_persionMessage_ll"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="@dimen/persionMessagePaddingBottom"
+        android:paddingTop="@dimen/persionMessagePaddingTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="性别"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+        <TextView
+            android:text="女"
+            android:id="@+id/sex_persionMessage_tv"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:src="@drawable/access"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:elevation="5dp"
+        android:id="@+id/birsday_persionMessage_ll"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="@dimen/persionMessagePaddingBottom"
+        android:paddingTop="@dimen/persionMessagePaddingTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="生日"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+        <TextView
+            android:text="2017-09-09"
+            android:id="@+id/birsday_persionMessage_tv"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:src="@drawable/access"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:textSize="12sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:text="其他信息"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:elevation="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="@dimen/persionMessagePaddingBottom"
+        android:paddingTop="@dimen/persionMessagePaddingTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="浏览次数"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+        <TextView
+            android:text="2017 次"
+            android:id="@+id/lookCount_persionMessage_tv"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:elevation="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="@dimen/persionMessagePaddingBottom"
+        android:paddingTop="@dimen/persionMessagePaddingTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="设备名称"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+        <TextView
+            android:text="小米手机"
+            android:id="@+id/deviceName_persionMessage_tv"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@drawable/back_left"
+            android:id="@+id/saveMessage_systemSet_bt"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:text="保    存    信    息"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp" />
+    </LinearLayout>
+
+</LinearLayout>

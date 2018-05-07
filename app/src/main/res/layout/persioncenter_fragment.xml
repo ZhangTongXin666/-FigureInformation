@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:imagecontrol="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/file_list_bg">
+
+        <!--简短信息-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:id="@+id/ll_information">
+
+                <view.RoundImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    imagecontrol:border_inside_color="#bc0978"
+                    imagecontrol:border_outside_color="#ba3456"
+                    imagecontrol:border_thickness="1dp"
+                    android:id="@+id/circlehead_persionCenter_riv" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/name_persionCenter_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="请先登录"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="上次浏览时间"
+                            android:textColor="@color/yellow"
+                            android:textSize="13dp" />
+
+                        <!--android:background="@drawable/persioncenter_textview_bg"-->
+
+                        <TextView
+                            android:id="@+id/upLookTime_persionCenter_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="还没登陆"
+                            android:textColor="@color/yellow"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tableWord_persionCenter_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="17dp"
+                        android:text="您所在的地区————张家口"
+                        android:textColor="@android:color/white"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:elevation="15dp"
+            android:layout_marginRight="@dimen/persionCenterMarginRight"
+            android:layout_marginLeft="@dimen/persionCenterMarginLeft"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:background="@drawable/persioncenter_linearlayout_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:id="@+id/persionMessage_persionCenter_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp">
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/persionmessage_icon"
+                    android:layout_width="@dimen/persionCenterIconSize"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@android:color/black"
+                    android:text="个人信息"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginLeft="60dp"
+                    android:text="点击我修改个人信息"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/customize_persionCenter_ll"
+                android:gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:layout_width="@dimen/persionCenterIconSize"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/customize_icon" />
+
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@android:color/black"
+                    android:text="私人定制"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginLeft="60dp"
+                    android:text="点击我修改我的兴趣"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:elevation="15dp"
+            android:layout_marginRight="@dimen/persionCenterMarginRight"
+            android:layout_marginLeft="@dimen/persionCenterMarginLeft"
+            android:layout_marginTop="@dimen/persionCenterMarginTop"
+            android:orientation="vertical"
+            android:background="@drawable/persioncenter_linearlayout_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/collection_persioncenter_ll"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp">
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/collection_icon"
+                    android:layout_width="@dimen/persionCenterIconSize"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@android:color/black"
+                    android:text="收藏栏"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginLeft="75dp"
+                    android:text="点击我查看收藏栏"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/subscription_persioncenter_ll"
+                android:gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/persionCenterIconSize"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/search" />
+
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@android:color/black"
+                    android:text="馆藏查找"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginLeft="60dp"
+                    android:text="点击我开始查找杂志"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:elevation="15dp"
+            android:layout_marginRight="@dimen/persionCenterMarginRight"
+            android:layout_marginLeft="@dimen/persionCenterMarginLeft"
+            android:layout_marginTop="@dimen/persionCenterMarginTop"
+            android:orientation="vertical"
+            android:background="@drawable/persioncenter_linearlayout_bg"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="120dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/systemSet_persionCenter_ll"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/systemset_icon"
+                    android:layout_width="@dimen/persionCenterIconSize"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@android:color/black"
+                    android:text="系统设置"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginLeft="60dp"
+                    android:text="点击我进行系统设置"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:background="@drawable/wheater_sunny"
+            android:id="@+id/iv_wheather"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="-2℃~10℃"
+            android:textSize="18dp"
+            android:alpha="0.7"
+            android:id="@+id/tv_temperature"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ViewPagerTitle">
+        <attr name="background_content_color" format="color"/>
+        <attr name="defaultTextViewColor" format="color"></attr>
+        <attr name="selectedTextViewColor" format="color"></attr>
+        <attr name="defaultTextViewSize" format="dimension"/>
+        <attr name="selectedTextViewSize" format="dimension"/>
+        <attr name="item_margins" format="dimension"/>
+        <attr name="line_start_color" format="color"/>
+        <attr name="line_end_color" format="color"/>
+        <attr name="line_height" format="integer"/>
+    </declare-styleable>
+
+    <!--进度条-->
+    <declare-styleable name="SVCircleProgressBar">
+        <attr name="roundColor" format="color"/>
+        <attr name="roundProgressColor" format="color"/>
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="max" format="integer"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="cpbWholeBackgroundColor" format="color|reference" />
+        <attr name="cpbForegroundColor" format="color|reference" />
+        <attr name="cpbBackgroundColor" format="color|reference" />
+        <attr name="cpbProgressTextColor" format="color|reference" />
+        <attr name="cpbStrokeWidth" format="integer" />
+        <attr name="cpbStartAngle" format="integer" />
+        <attr name="cpbNeedAnim" format="boolean" />
+        <attr name="cpbNeedShowText" format="boolean" />
+        <attr name="cpbMaxAngle" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="LineProgressBar">
+        <attr name="lpbBackgroundColor" format="color|reference" />
+        <attr name="lpbProgressImage" format="reference" />
+        <attr name="lpbSecondaryProgressImage" format="reference" />
+        <attr name="lpbProgressColor" format="color|reference" />
+        <attr name="lpbProgressTextColor" format="color|reference" />
+        <attr name="lpbNeedShowText" format="boolean" />
+        <attr name="lpbNeedAnim" format="boolean" />
+        <attr name="lpbImageWidth" format="dimension|reference" />
+        <attr name="lpbImageHeight" format="dimension|reference" />
+        <attr name="lpbOrientation" format="enum" >
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <attr name="horizontalSpacing" format="dimension" />
+    <attr name="verticalSpacing" format="dimension" />
+    <attr name="itemSize" format="dimension" />
+    <attr name="itemColor" format="color" />
+    <attr name="backgroundResource" format="reference" />
+    <attr name="textPaddingH" format="dimension" />
+    <attr name="textPaddingV" format="dimension" />
+
+    <declare-styleable name="FlowLayoutAttrs">
+        <attr name="horizontalSpacing" />
+        <attr name="verticalSpacing" />
+        <attr name="itemSize" />
+        <attr name="itemColor" />
+        <attr name="backgroundResource" />
+        <attr name="textPaddingH" />
+        <attr name="textPaddingV" />
+    </declare-styleable>
+</resources>

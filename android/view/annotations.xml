@@ -1,0 +1,6 @@
+<root>
+  <item name='android.view.View.OnLongClickListener'>
+    <annotation name='java.lang.annotation.Deprecated' />
+    <annotation name='android.support.annotation.NonNull' />
+  </item>
+</root>

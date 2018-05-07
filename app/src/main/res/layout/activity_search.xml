@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_search"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/file_list_bg">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/back" />
+        <LinearLayout
+            android:id="@+id/ll_homeSearch"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:src="@drawable/homesearch_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:text="进入馆藏"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_scanning"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:src="@drawable/icon_scanning"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:alpha="0.7"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:text="扫码搜索"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:id="@+id/ll_search"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_bg"
+                android:orientation="horizontal">
+
+                <AutoCompleteTextView
+                    android:id="@+id/actv_searchContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:completionThreshold="2"
+                    android:dropDownHeight="wrap_content"
+                    android:dropDownWidth="wrap_content"
+                    android:gravity="center"
+                    android:hint="专题搜素内容"
+                    android:maxLength="18"
+                    android:maxLines="1"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    android:drawableLeft="@mipmap/search"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="搜索"
+                    android:textColor="#8A8A8A" />
+            </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="历史搜索"
+            android:layout_marginLeft="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+        <TextView
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:paddingRight="5dp"
+            android:src="@mipmap/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginRight="20dp"
+            android:text="清空"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+   <TextView
+       android:layout_width="15dp"
+             android:layout_height="wrap_content"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="230dp">
+    <view.FlowLayoutView
+        android:layout_marginTop="10dp"
+        android:id="@+id/fl_keyword"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        app:itemSize="15sp" />
+</ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="14dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="人们正在搜索："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <master.flame.danmaku.ui.widget.DanmakuView
+            android:id="@+id/danmaku_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</LinearLayout>

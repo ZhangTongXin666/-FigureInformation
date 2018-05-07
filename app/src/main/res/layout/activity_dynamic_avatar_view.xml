@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_dynamic_avatar_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/file_list_bg"
+    tools:context=".DynamicAvatarViewActivity">
+
+    <include layout="@layout/title_view" />
+    <nokonw.RatioLayout
+        android:id="@+id/ratio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <view.DynamicAvatarView
+            android:id="@+id/dynamic"
+            android:src="@drawable/listpage_more_like"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </nokonw.RatioLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="51dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <Button
+            android:background="@drawable/back_left"
+            android:enabled="false"
+            android:layout_weight="1"
+            android:text="换一批"
+            android:id="@+id/bt_replace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"/>
+        <Button
+            android:background="@drawable/back_left"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="完成"
+            android:id="@+id/bt_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</RelativeLayout>

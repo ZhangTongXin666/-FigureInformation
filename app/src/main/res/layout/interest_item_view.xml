@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_className"
+            android:textColor="@color/tomato"
+            android:padding="5dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:background="@drawable/firstpage_textview_bg"
+            android:text="重大新药创制情报资源RSS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:src="@drawable/close_icon"
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_detailMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <view.MyTextView
+            android:id="@+id/tv_titleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Zydelig ︰ 第 20 条程序.....Zydelig ︰ 第 20 条程序......Zydelig ︰ 第 20 条程序..Zydelig ︰ 第 20 条程序"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <view.MyTextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="摘要。 关键的事实。 所有的文件。 摘要。 . EMA 为 Zydelig 建议新的安全措施。 措施包括密切监测和使用抗生素以预防的肺炎 EMA 的药物警戒风险评估委员会 (PRAC) 为医生和病人使用癌症药 Zydelig (idelalisib) 以确保它继续用于签发临时建议尽可能安全。Zydelig 目前授权在欧盟处理两种类型的血液癌症称为慢性淋巴.." />
+
+        <TextView
+            android:id="@+id/tv_timeAndAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Fri, 25 Mar 2016 03:53:02 GMT 郭红梅"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

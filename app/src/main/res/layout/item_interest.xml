@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:id="@+id/ll_click"
+        android:elevation="5dp"
+        android:background="@drawable/persioncenter_linearlayout_bg"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_randomPicture"
+            android:src="@drawable/night1"
+            android:scaleType="centerCrop"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp" />
+        <view.MyTextView
+            android:id="@+id/tv_contentTheme"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="解放路口的暑假工啊俄日工具俺看来是的"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

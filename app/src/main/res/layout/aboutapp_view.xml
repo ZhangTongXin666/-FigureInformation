@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/file_list_bg">
+
+    <LinearLayout
+        android:elevation="10dp"
+        android:background="@drawable/persioncenter_linearlayout_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/title_view"/>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:background="@drawable/logo"/>
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="图情咨询"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:paddingLeft="10dp"
+            android:text="      本平台数据是由国家科技图书文献中心（National Science and Technology library, 简称NSTL）提供。"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="      平台上提供的免费共享内容，实现内容信息的采集、录入、浏览、分类查询、分析、用户管理统计的功能，可根据用户的兴趣，定制用户的专属栏目。为图书情报行业提供精准及时快速的内容服务。"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="      大数据时代背景下，伴随着移动互联网技术的发展，图书情报工作者迫切需要从分散海量的信息中，获取图书情报领域的动态资讯，比如关于图书情报事业的新研究、新方法、新技术、新会议、新活动以及与之相关的规划、法规、标准等信息。这些有助于图情工作者开拓视野、促进工作的创新。NSTL已经建立了面向全国共享的图书情报领域信息门户（portal.nstl.gov.cn/lis），本平台自动监测到的内容、专题推荐内容、编译报道和简报产品均可对公众（注册）用户免费共享。"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

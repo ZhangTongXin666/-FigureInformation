@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/file_list_bg">
+
+    <LinearLayout
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/persioncenter_linearlayout_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginRight="60dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="欢迎获取图情资讯用户信息"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/close_register_iv"
+                android:src="@drawable/close"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginRight="5dp"
+                android:src="@drawable/phonenumber"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <EditText
+                android:maxLength="11"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:hint="请输入手机号"
+                android:background="@drawable/register_edittext_bg"
+                android:id="@+id/phoneNumber_register_et"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginRight="5dp"
+                android:src="@drawable/verficationcode"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <EditText
+                android:maxLength="6"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:id="@+id/verificationCode_register_et"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/register_edittext_bg"
+                android:gravity="center"
+                android:hint="验证码"
+                android:padding="5dp"
+                android:textSize="12sp" />
+
+            <Button
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:textColor="@android:color/white"
+                android:text="获得验证码"
+                android:background="@drawable/persionmessage_bt_bg"
+                android:id="@+id/getVerificationCode_register_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:textColor="@android:color/black"
+                android:text="下一步"
+
+                android:background="@drawable/persionmessage_bt_bg"
+                android:id="@+id/next_register_bt"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
