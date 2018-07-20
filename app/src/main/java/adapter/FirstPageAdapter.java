@@ -57,6 +57,7 @@ public class FirstPageAdapter extends BaseAdapter {
     private String tem;
     private int temInt;
     private double temDou;
+    private float temfla;
 
     public FirstPageAdapter(List<HashMap<String, String>> listItemContnet, String where) {
         this.listItemContnet = listItemContnet;
