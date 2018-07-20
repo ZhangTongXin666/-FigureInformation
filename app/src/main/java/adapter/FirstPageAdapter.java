@@ -54,6 +54,7 @@ public class FirstPageAdapter extends BaseAdapter {
     private List<HashMap<String, String>> listItemContnet;
     private String mStrWhere;
     private HashMap<String, String> mMapClassName;
+    private String tem;
 
     public FirstPageAdapter(List<HashMap<String, String>> listItemContnet, String where) {
         this.listItemContnet = listItemContnet;
